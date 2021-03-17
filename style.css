@@ -1,0 +1,312 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 99%;
+}
+
+main .container {
+    position: relative;
+    height: 100%;
+}
+
+.menu {
+    position: relative;
+    background: #077ACB;
+    width: 280px;
+    color: #FFFFFF;
+    height: 100%;
+}
+
+.menu div {
+    position: relative;
+    border-top: 2px solid #fcfcfc;
+    padding: 0;
+    width: 100%;
+}
+
+.menu div>* {}
+
+.menu h3 {
+    padding: 5% 6% 0;
+    color: #dadada;
+}
+
+.menu .head h3 {
+    padding: 0;
+    font-size: 1em;
+}
+
+.menu div span {
+    padding: 2%;
+    font-size: 13px;
+}
+
+.menu div.imgIcon {
+    position: absolute;
+    bottom: 0;
+    height: 200px;
+    width: 200px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.menu div.imgIcon img {
+    position: relative;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.container .search_bar {
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 0;
+    left: 300px;
+    margin: 10px;
+    padding: 10px;
+    width: 78%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .search_bar input {
+    position: relative;
+    width: 500px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background: #e6e6e6;
+    padding: 0 5px 0 50px;
+    left: 60px;
+}
+
+.container .search_bar span.fa-search {
+    position: absolute;
+    z-index: 2;
+    top: 23px;
+    left: 85px;
+    cursor: pointer;
+}
+
+.container .search_bar .notif_icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .search_bar .notif_icon .bell,
+.container .search_bar .notif_icon .profil {
+    position: relative;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 2px 0 0;
+    height: 50px;
+    border: 2px solid #077ACB;
+    cursor: pointer;
+}
+
+.container .search_bar .notif_icon .bell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.container .search_bar .notif_icon .bell .fa-bell {
+    font-size: 1.5em;
+}
+
+.container .search_bar .notif_icon .bell .number {
+    position: absolute;
+    bottom: 0;
+    right: 3px;
+    background: #fb4747;
+    color: #FFFFFF;
+    border-radius: 50%;
+    padding: 0 3px;
+    font-size: 12px;
+}
+
+.container .search_bar .notif_icon .profil img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.container .profile-info {
+    position: absolute;
+    top: 110px;
+    left: 285px;
+    width: 78%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .profile-info .info {
+    /* border: 2px solid blue; */
+    width: 70%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background: #077ACB;
+    border-radius: 10px;
+}
+
+.container .profile-info .info .message>* {
+    padding: 3px;
+}
+
+.container .profile-info .info .message .icons span {
+    background: darkblue;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 45%;
+    cursor: pointer;
+}
+
+.container .profile-info .imageProfile {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    bottom: -40px;
+    right: 30%;
+    border-radius: 50%;
+    border: 2px solid #e6e6e6;
+}
+
+.container .profile-info .imageProfile img {
+    width: 100%;
+    height: 100%;
+}
+
+.container .profile-info .imageProfile span.fa-camera {
+    color: #ffffff;
+    position: absolute;
+    font: 2em;
+    /* border: 2px solid red; */
+    background: #fb4343;
+    border-radius: 50%;
+    padding: 5px;
+    bottom: 3px;
+    right: 3px;
+    cursor: pointer;
+}
+
+.container .profile-info .content h3 {
+    color: #2929f1;
+    border-bottom: 2px solid #2929f1;
+}
+
+.container .profile-info .content ul {
+    list-style-type: none;
+}
+
+.container .profile-info .content ul li:before {
+    content: "\2022";
+    color: #2929f1;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.container .form {
+    position: absolute;
+    /* border: 2px solid orange; */
+    width: 50%;
+    display: inline-block;
+    top: 325px;
+    left: 330px;
+}
+
+.container .form_content h3 {
+    width: 100%;
+    border-bottom: 2px solid #077ACB;
+    color: #077ACB;
+}
+
+.container .form_content form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.container .form .form_content form div {
+    display: block;
+    /* border: 2px solid black; */
+    width: 50%;
+    margin: 5px;
+}
+
+.container .form .form_content form div label {
+    text-transform: capitalize;
+}
+
+.container .form .form_content form div input,
+.container .form .form_content form div select {
+    width: 100%;
+    margin: 2px;
+    border-radius: 5px 8px;
+    outline: none;
+    border: none;
+    background: #e6e6e6;
+    padding: 5px;
+}
+
+.container .form .edit {
+    /* border: 2px solid blue; */
+    width: fit-content;
+    padding: 0 5px;
+    background: #077ACB;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container .form .edit button {
+    width: 50px;
+    font-size: 1em;
+    color: #dadada;
+    background: #077ACB;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.container .form .edit span {
+    color: #dadada;
+}
+
+@media (max-width:1271px) {
+    main {
+        width: 95%;
+        border: 1px solid red;
+    }
+    .container .search_bar {
+        width: 73%;
+    }
+    .container .search_bar input {
+        width: 40%;
+    }
+    .container .form {
+        width: 50%;
+    }
+}
